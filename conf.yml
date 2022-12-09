@@ -1,0 +1,17 @@
+---
+sync:
+  local:
+    paths:
+      themes:
+        source: ./src/themes
+        target: ~/Local\ Sites/brandography/app/public/wp-content/themes
+        rsync:
+          push_flags: '-avz --delete'
+          pull_flags: '-avz'
+          ignore: 
+      plugins:
+        source: ./src/plugins
+        target: ~/Local\ Sites/brandography/app/public/wp-content/plugins
+        rsync:
+          push_flags: '-avz --delete'
+          pull_flags: '-avz --delete'
